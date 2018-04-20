@@ -1,0 +1,19 @@
+@import 'variables';
+@import '~bootstrap/scss/bootstrap';
+@import '~sweetalert2/src/sweetalert2';
+
+// @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic);
+// @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+// @import "node_modules/vue-material/dist/vue-material";
+@import "~vue-material/dist/theme/engine";
+@include md-register-theme("default", (
+  primary: md-get-palette-color(blue, A200),
+  accent: #3fffbe,
+  warn: #f0ad4e,
+));
+@import "~vue-material/dist/theme/all";
+
+@import 'elements/card';
+@import 'elements/navbar';
+@import 'elements/buttons';
+@import 'elements/transitions';
